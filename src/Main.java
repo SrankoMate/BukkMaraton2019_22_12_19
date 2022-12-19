@@ -15,9 +15,19 @@ public class Main {
                 Versenyzo versenyzo = new Versenyzo(sor);
                 versenyzok.add(versenyzo);
             }
-            for(Versenyzo item : versenyzok){
-                System.out.println(item.getRajtszam()+" "+item.getKategoria()+" "+item.getNev()+" "+item.getEgyesulet()+" "+item.getIdo());
-            }
+            System.out.println("4. feladat");
+            int nt = 691-versenyzok.size();
+            double arany = (nt/(double)691)*100;
+            System.out.print("A versenyzők ");
+            System.out.format("%.2f",arany);
+            System.out.println("%-a NEM teljesítette a versenyt.");
+
+            double arany2 = (versenyzok.size()/(double)691)*100;
+            System.out.print("A versenyzők ");
+            System.out.format("%.2f",arany2);
+            System.out.println("%-a teljesítette a versenyt.");
+
+            System.out.println("5. feladat");
         }catch(IOException r){
             r.printStackTrace();
         }
