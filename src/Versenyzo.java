@@ -1,16 +1,16 @@
 import java.sql.Time;
 
-public class Versenyzok {
+public class Versenyzo {
     private String rajtszam;
     private String kategoria;
     private String nev;
     private String egyesulet;
     private Time ido;
 
-    public Versenyzok() {
+    public Versenyzo() {
     }
 
-    public Versenyzok(String rajtszam, String kategoria, String nev, String egyesulet, Time ido) {
+    public Versenyzo(String rajtszam, String kategoria, String nev, String egyesulet, Time ido) {
         this.rajtszam = rajtszam;
         this.kategoria = kategoria;
         this.nev = nev;
@@ -18,7 +18,7 @@ public class Versenyzok {
         this.ido = ido;
     }
 
-    public Versenyzok(String csvSor) {
+    public Versenyzo(String csvSor) {
         String[] ertekek = csvSor.split(";");
 
         this.rajtszam = ertekek[0];
