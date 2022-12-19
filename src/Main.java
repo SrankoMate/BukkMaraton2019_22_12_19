@@ -28,6 +28,15 @@ public class Main {
             System.out.println("%-a teljesítette a versenyt.");
 
             System.out.println("5. feladat");
+            int szamlalo = 0;
+            for(Versenyzo item: versenyzok){
+                Versenytav versenytav = new Versenytav(item.getRajtszam());
+                if(versenytav.getTav().equals("Rövid")&&item.getKategoria().charAt(item.getKategoria().length()-1)!='f'){
+                    szamlalo++;
+                }
+            }
+            System.out.println("A női versenyzők száma a rövidtávú versenyen: "+szamlalo);
+
         }catch(IOException r){
             r.printStackTrace();
         }

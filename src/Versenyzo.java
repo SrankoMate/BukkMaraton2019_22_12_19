@@ -1,4 +1,5 @@
 import java.sql.Time;
+import java.util.Objects;
 
 public class Versenyzo {
     private String rajtszam;
