@@ -1,10 +1,11 @@
+import com.sun.jdi.IntegerValue;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.sql.Time;
 import java.time.LocalTime;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -45,6 +46,22 @@ public class Main {
                 {
                     System.out.println("Van olyan eset, amikor több mint 6 órán volt a pályán egy versenyző.");
                     break;
+                }
+            }
+            System.out.println("7. feladat");
+            Time min = new Time(23,59,59);
+            for(Versenyzo item:versenyzok){
+                Versenytav versenytav = new Versenytav(item.getRajtszam());
+                if(item.getIdo().before(min)&&versenytav.getTav().equals("Rövid")&&item.getKategoria().equals("ff"))
+                {
+                    min = item.getIdo();
+                }
+            }
+            for(Versenyzo item:versenyzok){
+                if(min.equals(item.getIdo()))
+                {
+                    System.out.println("A rövidtávú verseny felnőtt férfi kategóriájának győztese: ");
+                    System.out.println(item.getRajtszam()+" "+item.getKategoria()+" "+item.getNev()+" "+item.getEgyesulet()+" "+item.getIdo());
                 }
             }
         }catch(IOException r){
