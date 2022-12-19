@@ -64,8 +64,25 @@ public class Main {
                     System.out.println(item.getRajtszam()+" "+item.getKategoria()+" "+item.getNev()+" "+item.getEgyesulet()+" "+item.getIdo());
                 }
             }
+            System.out.println("8. feladat");
+            List<Statisztika> statisztikak = new ArrayList<>();
+            statisztikak.addAll(versenyzok);
+            Map<String,Integer> darabszamok = kategoriankentiOsszesites(statisztikak);
+            for(String kategoria:darabszamok.keySet()){
+                System.out.println(kategoria+" : "+darabszamok.get(kategoria));
+            }
         }catch(IOException r){
             r.printStackTrace();
         }
+    }
+    private static Map<String, Integer> kategoriankentiOsszesites(Collection<Statisztika> statisztikak){
+        Map<String,Integer> darabszamok = new TreeMap<>();
+        for(Statisztika statisztika : statisztikak)
+        {
+            int darabszam = darabszamok.getOrDefault(statisztika.getKategoria(),0);
+            darabszam++;
+            darabszamok.put(statisztika.getKategoria(),darabszam);
+        }
+        return darabszamok;
     }
 }

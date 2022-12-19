@@ -1,7 +1,7 @@
 import java.sql.Time;
 import java.util.Objects;
 
-public class Versenyzo {
+public class Versenyzo implements Statisztika{
     private String rajtszam;
     private String kategoria;
     private String nev;
@@ -36,7 +36,7 @@ public class Versenyzo {
     public void setRajtszam(String rajtszam) {
         this.rajtszam = rajtszam;
     }
-
+    @Override
     public String getKategoria() {
         return kategoria;
     }

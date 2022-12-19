@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39cd903c-1310-478a-9f6b-c74d3ff9ac84" name="Changes" comment="6. feladat kész, 6 órán át volt a pályán.">
+    <list default="true" id="39cd903c-1310-478a-9f6b-c74d3ff9ac84" name="Changes" comment="7. feladat kész, rövidtávú verseny felnőtt férfi kat győztese.">
+      <change afterPath="$PROJECT_DIR$/src/Statisztika.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Versenyzo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Versenyzo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -87,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671460983545</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="7. feladat kész, rövidtávú verseny felnőtt férfi kat győztese.">
+      <created>1671464235440</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1671464235440</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -108,7 +118,8 @@
     <MESSAGE value="5. feladat, arány kész." />
     <MESSAGE value="5. feladat kész, női versenyzők száma a rövidtávú versenyen." />
     <MESSAGE value="6. feladat kész, 6 órán át volt a pályán." />
-    <option name="LAST_COMMIT_MESSAGE" value="6. feladat kész, 6 órán át volt a pályán." />
+    <MESSAGE value="7. feladat kész, rövidtávú verseny felnőtt férfi kat győztese." />
+    <option name="LAST_COMMIT_MESSAGE" value="7. feladat kész, rövidtávú verseny felnőtt férfi kat győztese." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
