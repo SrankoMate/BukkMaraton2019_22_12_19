@@ -1,6 +1,8 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.sql.Time;
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,6 +39,14 @@ public class Main {
             }
             System.out.println("A női versenyzők száma a rövidtávú versenyen: "+szamlalo);
 
+            System.out.println("6. feladat");
+            for(Versenyzo item: versenyzok){
+                if(item.getIdo().after(new Time(6,00,00)))
+                {
+                    System.out.println("Van olyan eset, amikor több mint 6 órán volt a pályán egy versenyző.");
+                    break;
+                }
+            }
         }catch(IOException r){
             r.printStackTrace();
         }
